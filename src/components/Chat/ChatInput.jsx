@@ -18,8 +18,8 @@ function ChatInput({ onSendMessage }) {
     }
 
     return (
-        <div className="w-100 ">
-            {/* Chat Input */}
+        <div className="w-100">
+
             <div className="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4">
                 <div className="flex-grow ml-4">
                     <div className="relative w-full">

@@ -1,7 +1,9 @@
+// ChatBubble.jsx
 import PropTypes from 'prop-types';
 import UpvotesBtn from "./UpvotesBtn";
+import DismissBtn from "./DismissBtn";
 
-function ChatBubble({ question, sender, handleUpvote }) {
+function ChatBubble({ question, sender, handleUpvote, handleDismiss, priority }) {
     return (
         <div>
             <div className="col-start-6 col-end-13 p-3 rounded-lg">
@@ -12,14 +14,14 @@ function ChatBubble({ question, sender, handleUpvote }) {
                         {sender}
                     </div>
                     <div
-                        className="min-w-[90%] relative ms-3 text-sm bg-indigo-900 text-white py-2 px-4 shadow rounded-xl"
+                        className="w-100 min-w-[90%] max-w-96   text-wrap ms-3 text-sm bg-indigo-900 text-white py-4 px-4 shadow rounded-xl "
                     >
-                        <div className="">
+                        <div className="w-100 break-normal text-balance ">
                             {question}
                         </div>
-                        <div>
-                            <UpvotesBtn handleUpvote={handleUpvote} />
-                            {/* <DismissBtn /> */}
+                        <div className=" mt-3">
+                            {priority === 'normal' && <UpvotesBtn handleUpvote={handleUpvote} />}
+                            {priority !== 'normal' && <DismissBtn handleDismiss={handleDismiss} />}
                         </div>
                     </div>
                 </div>
@@ -31,7 +33,10 @@ function ChatBubble({ question, sender, handleUpvote }) {
 ChatBubble.propTypes = {
     question: PropTypes.string.isRequired,
     sender: PropTypes.string.isRequired,
+    upvotes: PropTypes.number.isRequired,
     handleUpvote: PropTypes.func.isRequired,
+    handleDismiss: PropTypes.func.isRequired,
+    priority: PropTypes.string.isRequired,
 };
 
 export default ChatBubble;
