@@ -1,9 +1,7 @@
-// import { useState } from "react";
 import PropTypes from 'prop-types';
-// import DismissBtn from './DismissBtn';
 import UpvotesBtn from "./UpvotesBtn";
 
-function ChatBubble({ question, sender }) {
+function ChatBubble({ question, sender, handleUpvote }) {
     return (
         <div>
             <div className="col-start-6 col-end-13 p-3 rounded-lg">
@@ -20,10 +18,9 @@ function ChatBubble({ question, sender }) {
                             {question}
                         </div>
                         <div>
-                            <UpvotesBtn />
+                            <UpvotesBtn handleUpvote={handleUpvote} />
                             {/* <DismissBtn /> */}
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -34,6 +31,7 @@ function ChatBubble({ question, sender }) {
 ChatBubble.propTypes = {
     question: PropTypes.string.isRequired,
     sender: PropTypes.string.isRequired,
+    handleUpvote: PropTypes.func.isRequired,
 };
 
 export default ChatBubble;
