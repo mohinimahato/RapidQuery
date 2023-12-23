@@ -23,3 +23,7 @@ Both priority sections provide a convenient "Dismiss" button. Simply click it to
 
 [Watch Rapid Query in Action](https://github.com/mohinimahato/RapidQuery/blob/main/src/demo/demoVideo.mp4)
 *Click to watch a demo video showcasing Rapid Query's features.*
+
+## Live Page:
+Explore the live page: [Rapid Query Live](https://rapid-query.vercel.app/)
+*Check out the live version of Rapid Query for a hands-on experience!*
