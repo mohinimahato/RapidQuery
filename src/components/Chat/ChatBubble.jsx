@@ -1,4 +1,4 @@
-// ChatBubble.jsx
+
 import PropTypes from 'prop-types';
 import UpvotesBtn from "./UpvotesBtn";
 import DismissBtn from "./DismissBtn";

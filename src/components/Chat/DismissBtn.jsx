@@ -6,8 +6,7 @@ function DismissBtn({ handleDismiss }) {
 
 
     const handleDismissal = () => {
-
-        handleDismiss(); // Call the handleDismiss function passed from the parent
+        handleDismiss();
     };
 
     return (

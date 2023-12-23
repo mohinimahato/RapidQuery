@@ -1,4 +1,4 @@
-// UpvotesBtn.jsx
+
 import PropTypes from 'prop-types';
 import { useState } from "react";
 
@@ -7,7 +7,7 @@ function UpvotesBtn({ handleUpvote }) {
 
     const handleVotes = () => {
         setUpVotes(upVotes + 1);
-        handleUpvote(); // Call the handleUpvote function passed from the parent
+        handleUpvote();
     };
 
     return (
