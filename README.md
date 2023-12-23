@@ -18,8 +18,8 @@ Both priority sections provide a convenient "Dismiss" button. Simply click it to
 
 ## *Screenshots and Demo*:
 
-![Chat Section](/Real-time-chat-ui/RealTimeChat/src/demo/UIScreenshot.jpeg)
+![Chat Section](https://github.com/mohinimahato/RapidQuery/blob/main/src/demo/UIScreenshot.jpeg)
 *Screenshot of the chat section in action.*
 
-[Watch Rapid Query in Action](/Real-time-chat-ui/RealTimeChat/src/demo/demoVideo.mp4)
+[Watch Rapid Query in Action](https://github.com/mohinimahato/RapidQuery/blob/main/src/demo/demoVideo.mp4)
 *Click to watch a demo video showcasing Rapid Query's features.*
