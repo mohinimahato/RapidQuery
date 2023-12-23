@@ -18,14 +18,14 @@ function ChatInput({ onSendMessage }) {
     }
 
     return (
-        <div className="w-100">
+        <div className="">
 
-            <div className="flex flex-row items-center h-16 rounded-xl bg-white w-full px-4">
+            <div className=" flex flex-row items-center h-16 rounded-xl bg-white min-w-[500px] px-4">
                 <div className="flex-grow ml-4">
                     <div className="relative w-full">
                         <input
                             type="text"
-                            className="flex w-full border rounded-xl focus:outline-none focus:border-indigo-300 pl-4 h-10"
+                            className="flex w-full text-black font-medium border rounded-xl focus:outline-none focus:border-indigo-300 pl-4 h-10"
                             value={inputText}
                             onChange={handleInputChange}
                             placeholder="Type your question here..."

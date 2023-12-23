@@ -16,7 +16,7 @@ function ChatBubble({ question, sender, handleUpvote, handleDismiss, priority })
                     <div
                         className="w-100 min-w-[90%] max-w-96   text-wrap ms-3 text-sm bg-indigo-900 text-white py-4 px-4 shadow rounded-xl "
                     >
-                        <div className="w-100 break-normal text-balance ">
+                        <div className="w-100 break-normal text-wrap ">
                             {question}
                         </div>
                         <div className=" mt-3">
